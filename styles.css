@@ -1,0 +1,125 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  margin: 0;
+  height: fit-content;
+}
+
+input {
+  outline: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 300px;
+  max-width: 700px;
+  padding: 2rem;
+  margin: auto;
+  font-size: 16px;
+}
+
+.form .row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin: 0.5rem 0;
+}
+
+.form input,
+.form button {
+  padding: 0.5rem 0.75rem;
+  flex: 1;
+  transition: 0.2s ease;
+  border-radius: 6px;
+  font-size: 1rem;
+  height: 2.5rem;
+  border: 1px solid grey;
+
+}
+
+.form button {
+  border: none;
+  color: white;
+}
+
+.form input:focus {
+  border: 1px solid #4087c5;
+  box-shadow: 0 0 4px r#4087c5;
+}
+
+.terms{
+  width: 75%;
+  white-space: wrap;
+}
+
+label[for="agree"] {
+  font-weight: bold;
+}
+
+input[name="agree"] {
+  height: fit-content;
+}
+
+a{
+  color: #4087c5
+}
+
+.register {
+  background-color: #4087c5;
+  color: white;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-size: 0.75rem;
+}
+
+.registerBtn {
+  background-color: #4087c5;
+}
+
+.signin {
+  background-color: #5bb85b;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 500px) {
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .registerBtn,
+  .signinBtn {
+    width: 100%;
+    display: block;
+  }
+
+  .form button {
+    flex: none;
+  }
+
+  .terms {
+    width: 100%;
+    white-space: wrap;
+  }
+}
+
+
